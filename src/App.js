@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Snapshot from './components/Snapshot';
+import Main from './components/Main';
+import Header from './components/Header';
+import Sponsor from './components/Sponsor';
+import About from './components/About';
+import Event from './components/Event';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
+import backgroundImage from './Screenshot.png';
 function App() {
+  const bgStyle = {
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed',
+    minHeight: '100vh',
+    
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+    <div className="website" style={bgStyle}>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Main/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/sponsor" element={<Sponsor/>} />
+        <Route path="/event" element={<Event/>} />
+        <Route path="/snapshot" element={<Snapshot/>} />
+        
+      </Routes>
+      <Footer/>
     </div>
+
+    </Router>
   );
 }
 
 export default App;
+

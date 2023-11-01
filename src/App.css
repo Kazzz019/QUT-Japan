@@ -1,38 +1,106 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+
+
+
+
+.first {
+  background-image: url("/Users/yoshiokawashin/Desktop/my-app/public/groupphoto.jpeg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+  font-family: 'Merriweather', serif;
+  
+}
+
+.fontbg {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+  padding: 10px; /* パディングを追加してスペースを作る */
+  border-radius: 5px; /* 角を丸くする */
+  font-weight: bold; 
+  font-size: 24px;
+  transform: translateY(180px);
+  
+}
+
+.snapshots{
+  background-color: bisque;
+  height:200px;
+  padding:80px 80px;
+  font-weight: 900;
+
+}
+
+.roundButton {
+  border-radius: 50%;
+}
+
+
+.display-4{
+  font-weight: 1000;
+}
+
+.card {
+  margin: 15px 0;
+}
+
+.ourheader{
+  height: 50px;
+}
+
+.navbar-brand {
+  font-size: 26px !important;
+}
+
+
+.links {
+  font-size: 20px;
+  margin-right: auto;
+}
+
+.nav-link {
+  margin-right: 15px; /* 右側のスペース */
+  margin-left: 15px;  /* 左側のスペース */
+}
+
+.placeCentre {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: 'Merriweather', serif;
+}
+.sponsorcontent{
+  font-family: 'Merriweather', serif;
+}
+
+.logoImage{
+  height: 100px;
+  width:100px;
+}
+
+.logo-spacing {
+  margin-right: 20px;  /* 20pxのスペースを追加 */
+ 
+}
+
+.eventHeading{
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 900;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.events{
+  height: 100px;
+  text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.eventCards{
+  padding: 20px 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.join{
+  background-color: yellowgreen;
+  margin: 30px 100px;
+  font-family: 'Merriweather', serif;  
 }
